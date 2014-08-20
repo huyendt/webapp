@@ -1,0 +1,545 @@
+/* 
+    Document   : primefaces
+    Created on : Sep 27, 2012, 2:21:26 PM
+    Author     : Dao Chien
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+/* Default style */
+
+.ui-widget {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px !important;
+}
+
+.ui-widget-content {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.ui-widget-content a {
+    color: #EC5E00;
+}
+
+.ui-state-default {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ui-state-hover {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.ui-state-focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.ui-state-disabled {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    opacity: 0.7 !important;
+    filter: Alpha(Opacity = 70) !important;
+
+}
+
+.ui-state-highlight a {
+    color: #EC5E00 !important;
+}
+
+#top-menu .ui-menu {
+    height: 45px;
+    background: url('../images/background-menu.png') repeat-x transparent;
+}
+
+#top-menu .ui-menu .ui-menu-list .ui-menuitem {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#top-menu .ui-menu-child .ui-menuitem:hover {
+    background: #CEE8F7 !important;
+}
+
+#top-menu .ui-menu .ui-menuitem-text {
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#top-menu .ui-menu .ui-menuitem-link {
+    height: 30px;
+}
+
+#top-menu .ui-menu-list.ui-helper-reset > .ui-menu-parent > .ui-menuitem-link > span {
+    margin-top: 5px;
+}
+
+#top-menu .ui-menubar > ul > li:last-child > a > span {
+    margin-top: 5px;
+}
+
+#top-menu .ui-menuitem .ui-state-hover {
+    background: url('../images/nav-hover.png') no-repeat transparent bottom;
+}
+
+#top-menu .ui-menuitem .ui-menu-child .ui-state-hover{
+    background: transparent;
+}
+
+#top-menu .ui-menu-child {
+    background: #F5F5F5;
+}
+
+#top-menu .ui-menu-child .ui-menuitem-text {
+    color: #333;
+    font-size: 12px;
+}
+
+#top-menu .ui-menu-child .ui-menuitem-text:hover {
+    color: #1791DC;
+}
+
+#top-menu .ui-menu-child .ui-menuitem-link {
+    height: 15px;
+}
+
+#top-menu .ui-menu-child .ui-menuitem {
+    background: transparent !important;
+    border-top: 1px solid #D4D4D4 !important;
+    padding: 0 !important;
+}
+
+#top-menu .ui-menuitem .ui-shadow {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#top-menu .ui-menubar .ui-menu-child {
+    top: 42px;
+}
+
+#top-menu .ui-menu {
+    padding: 0;
+}
+
+#top-menu .ui-menu .ui-menu-parent .ui-menu-child {
+    width: 250px !important;
+}
+
+#top-menu .ui-menu .ui-menuitem-link {
+
+}
+
+#top-menu .ui-menu-child .ui-icon {
+    background-image: url("../images/ui-icons_616161_256x240_black.png");
+}
+
+#top-menu .ui-icon {
+    background-image: url("../images/ui-icons_616161_256x240_white.png");
+}
+
+#breadcum ul li .ui-menuitem-link {
+    margin: 0;
+}
+
+.ui-inputfield {
+    width: 100%;
+    font-size: 12px;
+    padding: 4px !important;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;    
+    -moz-box-shadow: inset 0 2px 2px #8f8f8f !important;
+    -webkit-box-shadow: inset 0 2px 2px #8f8f8f !important;
+    box-shadow: inset 0 2px 2px #8f8f8f !important;
+}
+
+.ui-selectonemenu-label {
+    width: 98% !important;
+}
+
+.ui-button {
+    min-width: 90px;
+    height: 25px;
+    width: auto;
+    border-color: #ed6502 #a04300 #a04300 #ed6502 !important;
+    background: #ffac47 url(../images/primefaces/btn_bg.gif) repeat-x 0 100% !important;
+}
+
+.ui-button span {
+    color: #fff !important;
+    text-shadow: none !important;
+}
+
+.ui-button.ui-state-hover {
+    background: #f77c16 url(../images/primefaces/btn_over_bg.gif) repeat-x 0 0 !important;
+}
+
+.ui-button .ui-icon {
+    background-image: url("../images/ui-icons_616161_256x240_white.png") !important;
+}
+
+.ui-button.ui-state-active {
+    background: rgb(219, 123, 1) !important;
+}
+
+.ui-button.back {
+    border-color: #ccc #aaa #aaa #ccc !important;
+    background-color: #fff !important;
+    background: url(../images/primefaces/btn_back_bg.gif) repeat-x bottom #FEFEFE !important;
+}
+
+.ui-button.back .ui-button-text {
+    color: #555 !important;
+}
+
+.ui-button.back .ui-icon {
+    background-image: url("../images/ui-icons_616161_256x240_black.png") !important;
+}
+
+.ui-button.back.ui-state-hover {
+    border-color: #ccc #aaa #aaa #ccc !important;
+    background-color: #fff !important;
+    background: url(../images/primefaces/btn_back_bg.gif) repeat-x bottom #FEFEFE !important;
+}
+
+.ui-button-text-icon-left .ui-button-text {
+    padding: .3em 1em .4em 2.1em;
+}
+
+.ui-picklist .ui-button {
+    width: 30px !important;
+}
+
+.ui-splitbutton-menubutton {
+    width: 20px !important;
+}
+
+.ui-contextmenu ul {
+    width: auto !important;
+}
+
+.ui-menu {
+    width: auto !important;
+    padding-right: 7px;
+}
+
+.ui-menu.ui-menu-dynamic {
+    border: 1px solid #D6D6D6;
+    background: #FAFAFA !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    text-align: center !important;
+}
+
+.ui-widget-overlay {
+    background: #477FAE !important;
+}
+
+.ui-state-error {
+    border: 1px solid #CD0A0A !important;
+}
+
+.ui-widget-content {
+    border: 1px solid #DDD;
+}
+
+.ui-confirm-dialog .ui-dialog-buttonpane {
+    margin: .5em 0 0 0;
+    padding: 5px 20px;    
+}
+
+.ui-column-filter {
+    color: #222 !important; 
+}
+
+.ui-growl {
+    z-index: 100000 !important;
+    top: 30px;
+    right: 40px;
+}
+
+#keypad-div {
+    z-index: 10000;
+}
+
+.ui-chkbox, .ui-radiobutton {
+    cursor: pointer;
+}
+
+.ui-chkbox .ui-chkbox-box {
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.ui-selectonemenu {
+    width: 100% !important;
+}
+
+.ui-selectcheckboxmenu-panel {
+    width: 193px;
+}
+
+.ui-overlaypanel {
+    width: 173px;
+}
+
+.ui-selectmanycheckbox label, .ui-selectoneradio label {
+    margin-top: -3px !important;
+}
+
+.ui-chkbox .ui-chkbox-label {
+    margin: 2px 3px;
+}
+
+.ui-datatable th {
+    background: url(../images/primefaces/sort_row_bg.gif) 0 50% repeat-x !important;
+}
+
+.ui-datatable-odd {
+    background: none repeat scroll 0 0 #f6f6f6;
+}
+
+
+.ui-datatable .ui-expanded-row {
+    border-bottom: 1px solid #666666;
+}
+
+.ui-datatable .ui-selection-column .ui-chkbox-all {
+    margin: 0 !important;
+}
+
+.ui-datatable .ui-datatable-header, .ui-datatable .ui-paginator {
+    border: 1px solid #d1cfcf !important;
+    border-bottom: none !important;
+    background: url(../images/primefaces/massaction_bg.gif) repeat-x 0 100% #ebebeb !important;
+}
+
+.ui-datatable tr:hover:not(.ui-state-highlight){
+    background: #fcf5dd;
+}
+
+.ui-picklist .ui-picklist-list {
+    width: 350px !important;
+}
+
+.ui-picklist .ui-picklist-filter {
+    width: 350px !important;
+}
+
+.ui-autocomplete .ui-inputfield {
+    width: 170px;
+}
+
+.ui-autocomplete .ui-button {
+    width: 20px;
+    height: 25px;
+    position: absolute;    
+}
+
+.ui-growl-item-container {
+    opacity: 0.8 !important;
+    filter: Alpha(Opacity = 80) !important;
+}
+
+.ui-tree {
+    width: 100% !important;
+    background: transparent !important;
+    border: 0 !important;
+}
+
+.ui-tree .ui-treenode {
+    padding: 2px 0;
+}
+
+.ui-datepicker {
+    padding: 5px !important;
+}
+
+
+/* Custom primefaces */
+#sidebar .ui-menu {
+    background: transparent !important;
+    border: 0 !important;
+}
+
+
+#sidebar .ui-menu .ui-menuitem-link {
+    width: 100% !important;
+}
+
+#box-login .ui-button-icon-only .ui-icon {
+    margin: -12px 0 0 -12px !important;
+}
+
+.selectOne3btn .ui-button {
+    width: 33.3% !important;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;    
+}
+
+.selectOne3btn .ui-button-text {
+    font-size: 10px !important;
+}
+
+.selectOne2btn .ui-button {
+    width: 50% !important;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.selectOne2btn .ui-button-text {
+    font-size: 10px !important;
+} 
+
+.ui-buttonset {
+    margin: 0 auto !important;
+}
+
+.ui-selectonebutton .ui-state-hover {
+
+}
+
+.ui-wizard-step-title {
+    font-size: 13px !important;
+}
+
+.ui-panel {
+    padding: 0;
+    border: 0;
+}
+
+.ui-panel .ui-panel-titlebar {
+    background: #6F8992;
+    color: #fff;
+    text-align: left;
+}
+
+.content-no-border .ui-panel-titlebar {
+    border-bottom: 0;
+}
+
+.content-no-border .ui-panel-content {
+    padding: 0 !important;
+    border: 0 !important;
+}
+
+.ui-panel .ui-panel-content {
+    padding: 5px;
+    background: #FAFAFA;
+    border-bottom: 1px solid #D6D6D6;
+    border-left: 1px solid #D6D6D6;
+    border-right: 1px solid #D6D6D6;
+}
+
+.ui-panelgrid {
+    background: transparent !important;
+}
+
+.ui-panelgrid td, .ui-panelgrid tr {
+    border: 0 !important;
+}
+
+.ui-panelgrid tr {
+    background: transparent !important;
+}
+
+.ui-corner-all {
+    moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.ui-corner-left {
+    -moz-border-radius-topleft: 1px;
+    -webkit-border-top-left-radius: 1px;
+    border-top-left-radius: 1px;
+    -moz-border-radius-bottomleft: 1px;
+    -webkit-border-bottom-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.ui-corner-right {
+    -moz-border-radius-topright: 1px;
+    -webkit-border-top-right-radius: 1px;
+    border-top-right-radius: 1px;
+    -moz-border-radius-bottomright: 1px;
+    -webkit-border-bottom-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+.ui-layout-unit, .ui-layout-unit .ui-layout-unit-content {
+    background: transparent !important;
+    border: 0 !important;
+}
+
+#status_dialog_modal {
+    opacity: 0.1 !important;
+    filter: Alpha(Opacity = 0.1) !important;   
+}
+
+.ui-widget-header {
+    text-shadow: none;
+    font-size: 12px;
+}
+
+.ui-tabs .ui-tabs-nav {
+    background: #F8F8F8;
+    /*border-bottom: 1px solid #E2E2E2;*/
+}
+
+.ui-tabs .ui-tabs-nav li {
+    background: #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+.ui-outputlabel-rfi {
+    color: red;
+}
+
+.ui-tabs.ui-tabs-left .ui-tabs-nav {
+    padding: 0;
+    border-top: 1px solid #E2E2E2;
+    background: url(../images/primefaces/side_col_bg.gif) repeat-y right #fff;
+}
+
+.ui-tabs.ui-tabs-left .ui-tabs-nav li {
+    width: 100%;
+    border: 0;
+    margin: 0;
+    cursor: pointer;
+    border-bottom: 1px dotted #636363;
+    background: url(../images/primefaces/tabs_link_bg.gif) repeat-y 100% #E7EFEF;
+}
+
+.ui-tabs.ui-tabs-left .ui-tabs-nav li.ui-state-active a {
+    color: #0099CF;
+}
+
+.ui-tabs.ui-tabs-left .ui-tabs-nav li.ui-state-active {
+    background: #fff;
+}
+
+.ui-tabs.ui-tabs-left .ui-tabs-panel {
+    padding: 0;
+}

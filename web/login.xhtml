@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui" >
+
+    <h:head>
+        <title>TLS-ADMIN TELSOFT | Đăng nhập</title>
+        <link rel="Shortcut Icon" href="#{request.contextPath}/resources/images/favico.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="#{request.contextPath}/resources/css/style.css" />
+
+        <style type="text/css"> 
+            #status_dialog .ui-dialog-titlebar {
+                display: none;
+            }
+
+            #status_dialog {
+                moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+            }
+            
+            #status_dialog .ui-dialog-content {
+                padding: 3px !important;
+            }
+        </style>
+    </h:head>
+    <h:body class="login-body-bg">
+        <div id="wrapper" style="padding: 0px; background: transparent">
+            <div id="content">
+                <div id="box-login">
+                    <h:form id="form_login">
+                        <p:panelGrid columns="1" style="width: 85%; margin: auto;">
+                            <h:outputText value="ĐĂNG NHẬP" style="font-size: 20px; font-weight: bold;" />
+                            <p:spacer />
+                            <p:messages id="messages"  showDetail="true" showSummary="false" />
+                            <p:inputText style="text-transform: uppercase;" requiredMessage="Chưa nhập tài khoản" value="#{secuser.username}" id="username" required="true" label="Tài khoản" tabindex="1" />
+                            <p:password requiredMessage="Chưa nhập mật khẩu" value="#{secuser.password}" id="password" required="true" label="Mật khẩu" tabindex="2" />
+                            <p:selectBooleanCheckbox rendered="#{secuser.enableTOS}" tabindex="4" itemLabel="Tôi đồng ý với các điều khoản sủ dụng" value="#{secuser.mbAcceptRuler}" style="width: 100%" />
+                            <p:focus context="form_login" />
+                            <p:commandButton action="#{secuser.validateUser()}" value="Đăng nhập" icon="ui-icon-key" id="login_button" tabindex="5" process="form_login" update="form_login" style="width: auto;" />                            
+                        </p:panelGrid>
+                        <p:watermark for="username" value="TÊN ĐĂNG NHẬP" />
+                        <p:watermark for="password" value="MẬT KHẨU" />
+                    </h:form>                    
+                </div>                      
+            </div>
+
+            <p:ajaxStatus onstart="PF('statusDialog').show();" onsuccess="PF('statusDialog').hide();"/>
+            <p:dialog id="status_dialog" modal="true" widgetVar="statusDialog" draggable="false" closable="false" resizable="false" >
+                <p:graphicImage value="/resources/images/primefaces/gif-load.gif" />
+            </p:dialog>
+        </div>
+    </h:body>
+</html>

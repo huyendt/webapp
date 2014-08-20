@@ -1,0 +1,57 @@
+/* Login style */
+.login-body-bg {
+    padding: 0px !important;
+    background: url('../images/bglogin.jpg') no-repeat top left;
+}
+
+#content {
+    width: 400px;
+    margin: 100px auto;
+    padding-top: 70px;
+    background: url('../images/logo-small.png') no-repeat center top transparent;
+}
+
+#form_login {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.65);
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.1);
+    padding: 35px 0 30px;
+    width: 400px;
+    text-align: center;
+}
+
+#form_login .ui-inputfield {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    height: 40px;
+    border: 1px solid #eee;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#form_login\:login_button {
+    background: linear-gradient(#54B3FF, #0078D9) repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border-color: #2480C2 !important;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5) inset !important;
+    color: #FFFFFF!important;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35) !important;
+    height: 35px;
+}
+
+#form_login\:messages {
+    text-align: left;
+}
+
+.ajax-status {
+    position: fixed;
+    top: 35px;
+    right: 5px;
+    z-index: 1001;
+}
+
+.ajax-status-login {
+    position: fixed;
+    top: 1px;
+    right: 2px;
+    z-index: 1001;
+}

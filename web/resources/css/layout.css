@@ -1,0 +1,163 @@
+/* 
+    Document   : layout
+    Created on : Sep 27, 2012, 2:23:17 PM
+    Author     : Dao Chien
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+    background: #EDEDED;
+    padding: 0;
+}
+
+#wrapper {
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#wrapper #banner {
+    height: 81px;
+    width: 100%;
+    background: url('../images/banner-repeat.png') repeat-x transparent;
+}
+
+#banner #logo {
+    height: 75px;
+    width: 300px;
+    background: url('../images/logo.png') no-repeat transparent;
+}
+
+#top-menu .ui-widget {
+    font-family: "Segoe ui", Helvetica, sans-serif !important;
+}
+
+#top-menu .ui-corner-all {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;    
+}
+
+#logo img {
+    height: 100%;
+}
+
+#logo h1 a {
+    display: block;
+    text-indent: -9999px;
+    height: 60px;
+    padding-top: 20px;
+    background: url('../images/logo.png') no-repeat center;
+}
+
+#logo h1 {
+    padding: 0px;
+    margin: 0px;
+}
+
+#profile_info {
+    float:right;
+    margin-right: 40px;
+    font-size:12px;    
+    height:14px;
+    padding: 4px 10px;
+    font-weight: bold;
+    color: #666;
+    background: url('../images/background-profile.png') repeat-x transparent;
+    border: 1px solid #B3B3B3;
+    -webkit-border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+#profile_info .link-logout {
+
+}
+
+#profile_info .ui-icon {
+    background-image: url("../images/ui-icons_616161_256x240_black.png") !important;
+}
+
+/** Center Layout **/
+#module-name {
+    background-color: #ddd !important;
+    background-image: none !important;
+    border: 0 !important;
+    border-bottom: 1px solid #cfcfcf !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+    text-align: left;
+    width: auto;
+    margin-top: 0;
+    text-align: center;
+}
+
+#module-name a {
+    color: #333;
+    text-decoration: none;
+}
+
+#module-name h1 {
+    color: #333;
+    margin: 0;
+}
+
+#module-name h1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#content-main {
+    width: 100%;
+    background: none;
+    padding: 10px;
+    border: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#content-center {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#dashboard {
+    width: 100%;
+    background: url('../images/background-dashboard.png') repeat-x bottom transparent;
+    border: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    margin-top: 10px;
+    padding-bottom: 120px;
+}
+
+#dashboard .ui-breadcrumb {
+    background: transparent;
+    border: 0;
+    border-bottom: 5px solid #dfdfdf;
+}
+
+#dashboard .ui-menuitem-text {
+    color: #0099cc;
+    font-size: 14px;
+}
+
+#footer {
+    background: url('../images/bottom-logo.png') no-repeat #EDEDED;
+    background-position: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+#footer div {
+    font-size: 11px;
+}
